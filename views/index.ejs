@@ -223,39 +223,39 @@
     <form action="/contacto" method="POST" id="contactForm">
       <div class="row">
         <div class="form-group col-md-6">
-          <label for="nombre" class="font-tinos font-18">Nombre</label>
-          <input type="text" id="nombre" class="form-control" required maxlength="25">
+          <label for="nombreCli" class="font-tinos font-18">Nombre</label>
+          <input type="text" id="nombreCli" name="nombreCli" class="form-control" required maxlength="25">
         </div>
         <div class="form-group col-md-6">
-          <label for="email" class="font-tinos font-18">Correo</label>
-          <input type="email" id="email" class="form-control" required maxlength="25">
+          <label for="emailCli" class="font-tinos font-18">Correo</label>
+          <input type="email" id="emailCli" name="emailCli" class="form-control" required maxlength="25">
         </div>
       </div>
       <div class="row"> 
         <div class="form-check ml-5 ml-md-0 col-md-4">
-          <input type="checkbox" class="form-check-input" id="MRS">
-          <label class="form-check-label" for="MRS">Marketing en Redes Sociales</label>
+          <input type="checkbox" name="servicios" value="Marketing en Redes Sociales" class="form-check-input" id="marketingRS">
+          <label class="form-check-label" for="marketingRS">Marketing en Redes Sociales</label>
         </div>
         <div class="form-check ml-5 ml-md-0 col-md-4">
-          <input type="checkbox" class="form-check-input" id="DPW">
-          <label class="form-check-label" for="DPW">Diseño de Páginas Web</label>
+          <input type="checkbox" name="servicios" value="Diseño de Páginas Web" class="form-check-input" id="disenoPW">
+          <label class="form-check-label" for="disenoPW">Diseño de Páginas Web</label>
         </div>
         <div class="form-check ml-5 ml-md-0 col-md-4">
-          <input type="checkbox" class="form-check-input" id="AM">
-          <label class="form-check-label" for="AM">Asesoría de Marketing</label>
+          <input type="checkbox" name="servicios" value="Asesoria de Marketing" class="form-check-input" id="asesoriaM">
+          <label class="form-check-label" for="asesoriaM">Asesoría de Marketing</label>
         </div>
         <div class="form-check ml-5 ml-md-0 col-md-4">
-          <input type="checkbox" class="form-check-input" id="DG">
-          <label class="form-check-label" for="DG">Diseño Gráfico</label>
+          <input type="checkbox" name="servicios" value="Diseño Gráfico" class="form-check-input" id="disenoG">
+          <label class="form-check-label" for="disenoG">Diseño Gráfico</label>
         </div>
         <div class="form-check ml-5 ml-md-0 col-md-4">
-          <input type="checkbox" class="form-check-input" id="MI">
-          <label class="form-check-label" for="MI">Marketing Inbound</label>
+          <input type="checkbox" name="servicios" value="Marketing Inbound" class="form-check-input" id="marketingI">
+          <label class="form-check-label" for="marketingI">Marketing Inbound</label>
         </div>
       </div>
       
       <p class="font-tinos font-18">Porfavor, describa la información que requiere</p>
-      <textarea name="descripcion" id="descripcion" maxlength="1000"></textarea>
+      <textarea form="contactForm" name="descripcion" id="descripcion" maxlength="1000"></textarea>
       <button type="submit" class="btn btn-primary btn-block font-biryani">ENVIAR!</button>
     </form>
 
@@ -272,3 +272,10 @@
       <script src="js/mainFront.js"></script>
     </body>
 </html>
+
+<!-- <h4>Deseo información sobre los sigueintes servicios:</h4>
+<ul><li></li></ul>
+<h4>Detalle de información solicitada:</h4>
+<p></p>
+<h4>Contacto del cliente</h4>
+<p></p> -->
